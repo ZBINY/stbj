@@ -1,0 +1,85 @@
+@import "../common/common.css";
+
+.avatar-wrapper {
+  height: 412rpx;
+  flex-direction: column;
+}
+
+.avatar-wrapper  image {
+  margin-bottom: 40rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+
+.avatar-wrapper text {
+  font-size: 34rpx;
+  color: #646464;
+}
+
+.personal-list {
+  padding: 48rpx 40rpx 0 63rpx;
+  width: 100%;
+  height: calc(100vh - 412rpx);
+  background: #fff;
+  font-size: 26rpx;
+  color: #323232;
+}
+
+.list-item {
+  justify-content: space-between;
+}
+
+.list-item-title {
+  height: 104rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item-title image {
+  margin-right: 25rpx;
+}
+
+.personal_orderList {
+  width: 25rpx;
+  height: 30rpx;
+}
+
+.personal_msg {
+  width: 31rpx;
+  height: 23rpx;
+}
+
+.personal_department {
+  width: 32rpx;
+  height: 28rpx;
+}
+
+.personal_calculate {
+  width: 27rpx;
+  height: 28rpx;
+}
+
+.right_icon {
+  width: 12rpx;
+  height: 18rpx;
+  padding: 15rpx;
+}
+
+.list-item-right text {
+  color: #7a7a7a;
+  margin-right: 10rpx;
+}
+
+.changeAccount {
+  padding: 30rpx 0;
+  position: absolute;
+  left: 0;
+  bottom: 40rpx;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 26rpx;
+  color: #969696;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合作案例</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        /*翻页*/
+        .pagenation {
+            padding: 40px 30px 60px 180px;
+            color: #666;
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -khtml-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+        .pagenation .pagenum {
+            float: left;
+            min-width: 30px;
+            padding: 3px 5px;
+            text-align: center;
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 3px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .pagenation .pagenum.indexpage, .pagenation .pagenum.lastpage, .pagenation .pagenum.nextpage {
+            background: rgba(255,255,255,0);
+            color: #d9cfce;
+        }
+
+        .pagenation .pagenum.indexpage.active, .pagenation .pagenum.lastpage.active, .pagenation .pagenum.nextpage.active {
+            background-color: #f5f5f5;
+            color: #999;
+        }
+
+        .pagenation .pagenum.indexpage.active a, .pagenation .pagenum.lastpage.active a, .pagenation .pagenum.nextpage.active a {
+            color: #999;
+        }
+
+        .pagenation .pagenum.pagetext, .pagenation .pagenum.totalpage {
+            border-radius: 0px;
+            background: rgba(255,255,255,0);
+            border: none;
+        }
+
+        .pagenation .pagenum a {
+            color: #999;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pagenation .pageswiperbox {
+            min-width: 35px;
+            max-width: 175px;
+            overflow: hidden;
+            word-break: keep-all;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            float: left;
+        }
+
+        .pagenation .pageswiper {
+            width: auto;
+        }
+
+        .pagenation .pageswiper .pagenum {
+            display: inline-block;
+            float: none;
+        }
+
+        .pagenation .pagenum.curpage {
+            background: rgba(255,255,255,0);
+            color: #FE7200;
+            border: none;
+        }
+
+        .pagenation .pagenum.curpage a {
+            color: #FE7200;
+            display: block;
+            width: 100%;
+        }
+
+        .pagenation .pageinput {
+            text-align: center;
+            border: 1px solid #e5e5e5;
+            width: 40px;
+            margin: 0 3px;
+            line-height: 17px;
+            box-sizing: border-box;
+            vertical-align: top;
+        }
+
+        .pagenation .pagesubbtn {
+            background: rgba(255,255,255,0);
+        }
+
+        .pagenation .pagesubbtn a {
+            color: #d9cfce;
+        }
+
+        .pagenation .pagesubbtn.active {
+            background: #f5f5f5;
+        }
+
+        .pagenation .pagesubbtn a {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <div class="srbj-head">
+        <div class="Head"></div>
+        <div class="Sec-head"></div>
+        <div class="Login"></div>
+    </div>
+
+    <div class="Case_bg"></div>
+    <!--案例-->
+    <div class="Case-wrapper">
+        <div class="Case w1200">
+            <!--面包线-->
+            <p class="nowon">当前位置  >网站首页 > 合作案例</p>
+            <!--案例主体-->
+            <div class="Case-con flex">
+                <!--案例内容（下方的line要携带）-->
+                <div class="Case-con-left" id="pageBox">
+                    <a href="../html/caseDetail.html"><div class="Case-content flex choose">
+                        <img src="../img/service/gg.png" alt="">
+                        <div class="detail">
+                            <h4 class="title">北京四通搬家成功完成“一带一路”国际合作高峰论坛货运保障任务</h4>
+                            <p class="date">时间：2018.07.23 17:00</p>
+                            <div class="msg">今天四通搬家送走了“一带一路”国际合作高峰论坛最后一批代表团，对四通来说包括29位外国元首和 政府首脑在内的来自130多个国家今天四通搬家送走了“一带一路”国际合作高峰论坛最后一批代表团，对四通来说包括29位外国元首和 政府首脑在内的来自130多个国家</div>
+                        </div>
+                    </div></a>
+                    <div class="line"></div>
+
+                    <div class="Case-content flex">
+                        <img src="../img/service/gg.png" alt="">
+                        <div class="detail">
+                            <h4 class="title">北京四通搬家成功完成“一带一路”国际合作高峰论坛货运保障任务</h4>
+                            <p class="date">时间：2018.07.23 17:00</p>
+                            <div class="msg">今天四通搬家送走了“一带一路”国际合作高峰论坛最后一批代表团，对四通来说包括29位外国元首和 政府首脑在内的来自130多个国家今天四通搬家送走了“一带一路”国际合作高峰论坛最后一批代表团，对四通来说包括29位外国元首和 政府首脑在内的来自130多个国家</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+
+
+                </div>
+                <!--右侧展示-->
+                <div class="Case-con-rgt">
+                    <div class="Case-con-detail">
+                        <p class="name">合作案例</p>
+                        <ul class="content1">
+                            <li class="red">国际项目案例</li>
+                            <li>国际项目案例</li>
+                            <li>国际项目案例</li>
+                            <li>国际项目案例</li>
+                            <li>国际项目案例</li>
+                        </ul>
+                    </div>
+
+                    <div class="Case-con-detail">
+                        <p class="name">搬家小常识</p>
+                        <ul class="content2">
+                            <li class="red">北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                        </ul>
+                    </div>
+
+                    <div class="Case-con-detail">
+                        <p class="name">搬家吉日</p>
+                        <ul class="content2">
+                            <li class="red">北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                            <li>北京化工大学学生搬家工作搬家工作</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="stbj-footer"></div>
+    <div class="stbj-copyRight"></div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/common.js"></script>
+    <script src="../js/paging.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //分页
+        var options = {
+            list:".list",//列表标识
+            currentPage:1,//初始页（选传，默认1）
+            pageSize:5,//每页列表数
+            listTotal:31,//列表总数（选传），不传为list总数
+            callback:function(currentPage){//翻页回调（可填，可做ajax请求）,不传为纯html切换
+                loadData(ajaxDemo(currentPage))
+            }
+        }
+        $("#pageBox").paging(options)
+        function ajaxDemo(page,pageSize){
+            if(!pageSize)var pageSize = 5;
+            var data = {},arr=[];
+            for(var i = 1;i<=31;i++){
+                arr.push(i);
+                if(i==pageSize){
+                    data[1]=arr;
+                    arr=[];
+                }else if(i==pageSize*2){
+                    data[2]=arr;
+                    arr=[];
+                }else if(i==pageSize*3){
+                    data[3]=arr;
+                    arr=[];
+                }else if(i==pageSize*4){
+                    data[4]=arr;
+                    arr=[];
+                }else if(i==pageSize*5){
+                    data[5]=arr;
+                    arr=[];
+                }else if(i==pageSize*6){
+                    data[6]=arr;
+                    arr=[];
+                }else if(i==31){
+                    data[7]=arr;
+                    arr=[];
+                }
+            }
+            return data[page];
+        }
+        function loadData(data){
+            console.log("callback")
+            $("#pageBox").empty();
+            for(var i = 0;i<data.length;i++){
+                $("#pageBox").append("<li class='list'>"+data[i]+"</li>");
+            }
+        }
+    </script>
+</body>
+</html>

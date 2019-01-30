@@ -1,0 +1,240 @@
+<view class='quickorder'>
+  <view class="navbar">
+      <block s-for="item, index in tabs" s-key="*this">
+          <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+            <view class="navbar__title">{{item.name}}</view>
+          </view>
+      </block>
+  </view>
+   
+   <scroll-view scroll-y style='height:{{1200}}rpx' bindscrolltoupper='upper' bindscrolltolower='lower' bindscroll='scroll' scroll-top='{=scrollTop=}'>
+    <view class='swiper_content' style='height:{{4*180}}px'>
+      <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange">
+        <swiper-item>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='success noneborder'>待评价</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+              <view class='address_3 color'>
+                取消订单
+              </view>
+              <view class='address_3 color' bindtap='bindConfirms'>
+                申请发票
+              </view>
+              <view class='address_3 color'>
+                支付订单
+              </view>
+              <view class='address_3 success' bindtap='bindConfirm'>
+                去评价
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='danger'>客服已确认</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='error'>已分配司机</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='error'>已分配司机</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper_content_1">
+         <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='success noneborder'>待评价</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+              <view class='address_3 color'>
+                取消订单
+              </view>
+              <view class='address_3 color'>
+                申请发票
+              </view>
+              <view class='address_3 color'>
+                支付订单
+              </view>
+              <view class='address_3 success'>
+                去评价
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='danger'>客服已确认</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='error'>已分配司机</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='error'>已分配司机</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          
+        </swiper-item>
+        <swiper-item class='swiper_content_1'>
+           <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='success noneborder'>待评价</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+              <view class='address_3 color'>
+                取消订单
+              </view>
+              <view class='address_3 color'>
+                申请发票
+              </view>
+              <view class='address_3 color'>
+                支付订单
+              </view>
+              <view class='address_3 success'>
+                去评价
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='danger'>客服已确认</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='error'>已分配司机</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+              <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='error'>已分配司机</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+              </view>
+              <view class='address_2'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper> 
+    </view>
+  </scroll-view>
+</view>
+

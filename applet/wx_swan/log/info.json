@@ -1,0 +1,452 @@
+[
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/libs/bmap-wx.min.js",
+        "row": 1,
+        "column": 585,
+        "before": "wx.getLocation",
+        "after": "swan.getLocation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/libs/bmap-wx.min.js",
+        "row": 1,
+        "column": 1172,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/libs/bmap-wx.min.js",
+        "row": 1,
+        "column": 2249,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/libs/bmap-wx.min.js",
+        "row": 1,
+        "column": 2938,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/libs/bmap-wx.min.js",
+        "row": 1,
+        "column": 3984,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/assess/assess.js",
+        "row": 151,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/class/class.js",
+        "row": 78,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/d/d.js",
+        "row": 10,
+        "column": 13,
+        "before": "wx.canIUse",
+        "after": "swan.canIUse",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/d/d.js",
+        "row": 61,
+        "column": 6,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/d/d.js",
+        "row": 73,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/detail/detail.js",
+        "row": 14,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/detail/detail.js",
+        "row": 22,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/drawing/drawing.js",
+        "row": 27,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/home/home.js",
+        "row": 130,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/home/home.js",
+        "row": 141,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/home/home.js",
+        "row": 149,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/home/home.js",
+        "row": 204,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/home/home.js",
+        "row": 249,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/home/home.js",
+        "row": 258,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/login/login.js",
+        "row": 15,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/map/map.js",
+        "row": 76,
+        "column": 6,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/map/map.js",
+        "row": 81,
+        "column": 6,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/map/map.js",
+        "row": 87,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/map/map.js",
+        "row": 101,
+        "column": 6,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/order/order.js",
+        "row": 15,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/order/order.js",
+        "row": 23,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/order/order.js",
+        "row": 31,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/orderList/orderList.js",
+        "row": 31,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/orderList/orderList.js",
+        "row": 39,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/personal/personal.js",
+        "row": 13,
+        "column": 4,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/personal/personal.js",
+        "row": 20,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/personal/personal.js",
+        "row": 27,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/personal/personal.js",
+        "row": 34,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/pages/personal/personal.js",
+        "row": 41,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 55,
+        "column": 8,
+        "before": "wx.getLocation",
+        "after": "swan.getLocation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 268,
+        "column": 12,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 301,
+        "column": 8,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 331,
+        "column": 12,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 362,
+        "column": 8,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 386,
+        "column": 8,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 415,
+        "column": 8,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.js",
+        "row": 449,
+        "column": 12,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 1,
+        "column": 1179,
+        "before": "wx.getLocation",
+        "after": "swan.getLocation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 1,
+        "column": 3893,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 1,
+        "column": 4224,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 1,
+        "column": 4565,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 1,
+        "column": 4844,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 2,
+        "column": 0,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 2,
+        "column": 248,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/wx_swan/utils/qqmap-wx-jssdk.min.js",
+        "row": 2,
+        "column": 589,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

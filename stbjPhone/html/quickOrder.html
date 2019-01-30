@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0, user-scalable=no"/>
+    <title>快速下单</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body style="background: #f5f6fa;">
+    <div class="order-wrapper">
+        <!--快速下单后填写联系人信息-->
+        <div id="order-msg">
+            <p class='title'>订单联系人资料</p>
+            <div class='orderdetail'>
+                <div class='address'>
+                    <div class='imgs'>
+                        <img src='../img/11_23.png'>
+                        <img src='../img/12_23.png'>
+                        <img src='../img/13_23.png'>
+                    </div>
+                    <div class='panel'>
+                        <div class='address_1 address_flex'>
+                            <text>2018-08-21 11:00</text>
+                        </div>
+                        <div class='address_2'>
+                            <input class='text' placeholder="请输入联系人姓名" />
+                            <!-- <text class='text'>海淀区清河美馨家园信息科技大学西</text> -->
+                        </div>
+                        <div class='address_2'>
+                            <input class='text' placeholder="请输入联系人手机号" />
+                            <!-- <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='orderbottom'>
+                <div class='tip'>
+                    <p>若产生高速费、停车费和搬运费，请用户额外支付</p>
+                    <p>若涉及逾时等候费，请与司机按收费标准结算</p>
+                </div>
+                <div class='write'>
+                    <p class='font26s'>预估</p>
+                    <p class='font48'>80.6</p>
+                    <p class='font26s'>元</p>
+                    <p class='jgmx' onclick="location.href='../html/detail.html'">价格明细</p>
+                </div>
+                <div class='next'>下单（无需支付）</div>
+            </div>
+
+        </div>
+
+        <!-- 遮罩层 -->
+        <div class="mask" style="display: none;">
+            <!-- 查看我的订单 -->
+            <div class="receivable">
+                <img src='../img/success.png' class='succe'>
+                <p class="faceToFace">下单成功</p>
+                <div class='back' onclick="location.href='../html/detail.html'">查看我的订单</div>
+            </div>
+        </div>
+    </div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>区域列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .areas-map-wrapper{
+            height: 552px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+        }
+        .areas-map-wrapper .map{
+            width: 70%;
+        }
+        .areas-map-wrapper .city{
+            height: inherit;
+            /*float: right;*/
+            margin-top:70px;
+            margin-right: 30px;
+            overflow: hidden;
+            width: 30%;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="srbj-head">
+    <div class="Head"></div>
+    <div class="Sec-head"></div>
+    <div class="Login"></div>
+</div>
+
+<div class="areas-wrapper">
+    <div class="areas w1200">
+        <p class="title">热门商圈及服务热线 <span class="line">|</span> <i></i><span class="dw-red">北京</span></p>
+        <div class="areas-con-wrapper">
+            <div class="areas-map-wrapper">
+                <div class="map">
+                    <!--echart-->
+                    <div id="fzdw_zxs" style="width: 100%;height:550px;"></div>
+                </div>
+                <!--地图右侧城市-->
+                <div class="city">
+                    <li><i></i>北京</li>
+                    <li><i></i>北京</li>
+                    <li><i></i>北京</li>
+                </div>
+            </div>
+            <!--底部联系方式-->
+            <ul class="areas-tel">
+                <li>东城区：010-5166 2781</li>
+                <li>朝阳区：010-5166 3766</li>
+                <li>丰台区：010-5166 2725</li>
+                <li>海淀区：010-5166 2790</li>
+                <li>东城区：010-5166 2781</li>
+                <li>朝阳区：010-5166 3766</li>
+                <li>丰台区：010-5166 2725</li>
+                <li>海淀区：010-5166 2790</li>
+                <li>东城区：010-5166 2781</li>
+                <li>朝阳区：010-5166 3766</li>
+                <li>丰台区：010-5166 2725</li>
+                <li>海淀区：010-5166 2790</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="stbj-footer"></div>
+<div class="stbj-copyRight"></div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/echarts.min.js"></script>
+<!--<script src="../json/china.json"></script>-->
+<!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>-->
+<script src="../js/common.js"></script>
+<script src="../js/map.js"></script>
+
+</body>
+</html>

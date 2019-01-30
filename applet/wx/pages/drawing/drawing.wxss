@@ -1,0 +1,64 @@
+/* pages/drawing/drawing.wxss */
+@import "../common/common.wxss";
+page{
+  height: 100%;
+}
+.drawing{
+  padding: 3rpx 0 43rpx 23rpx;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.font26{
+  font-size: 26rpx;
+  color:#323232;
+}
+
+.font32{
+  font-size: 32rpx;
+  color:#c41419;
+  margin-right: 23rpx;
+}
+
+.button{
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color:#d5d5d5;
+  border:1rpx solid #d5d5d5;
+  border-radius:50rpx;
+  margin-left: 40rpx;
+  display: inline-block;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.on{
+  color:#c41419;
+  border:1rpx solid #c41419;
+}
+
+.color{
+  color:#969696;
+  width: 90%;
+}
+
+/*按钮*/
+.confirm { 
+ height: 110rpx;
+ line-height: 110rpx; 
+ background-color: #ca161f; 
+ color: #fff;
+ font-size: 34rpx;
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 750rpx;
+ text-align: center;
+}

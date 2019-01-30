@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/map/map",
+    "pages/assess/assess",
+    "pages/drawing/drawing",
+    "pages/order/order",
+    "pages/coupon/coupon",
+    "pages/detail/detail",
+    "pages/orderList/orderList",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/class/class"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "四通搬家",
+    "navigationBarTextStyle": "write"
+  }
+}

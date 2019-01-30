@@ -1,0 +1,191 @@
+[
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/app.js",
+        "row": 5,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/app.js",
+        "row": 7,
+        "column": 4,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/app.js",
+        "row": 16,
+        "column": 4,
+        "before": "wx.getSetting",
+        "after": "swan.getSetting",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/app.js",
+        "row": 20,
+        "column": 10,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/homePage/homePage.js",
+        "row": 24,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/homePage/homePage.js",
+        "row": 30,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/login/login.js",
+        "row": 15,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 202,
+        "column": 6,
+        "before": "wx.makePhoneCall",
+        "after": "swan.makePhoneCall",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 206,
+        "column": 6,
+        "before": "wx.makePhoneCall",
+        "after": "swan.makePhoneCall",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 223,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 261,
+        "column": 8,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 281,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 322,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 352,
+        "column": 8,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 372,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 410,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 440,
+        "column": 8,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/orderDetail/orderDetail.js",
+        "row": 460,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/personal/personal.js",
+        "row": 12,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/personal/personal.js",
+        "row": 19,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/binyng/Desktop/stbjDriver2_swan/pages/personal/personal.js",
+        "row": 25,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

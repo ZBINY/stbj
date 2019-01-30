@@ -1,0 +1,74 @@
+<view class="page">
+    <!--<scroll-view scroll-y style="height: calc(100vh - 150rpx);">-->
+        <!--订单列表-->
+        <view class='address' bindtap='bindViewTapDetail'>
+            <!--列表左侧三色图标-->
+            <image src='../../img/3_03.png'></image>
+            <!--列表右侧信息-->
+            <view class='panel'>
+                <view class='address_1 address_flex'>
+                    <text>2018-08-21 11:00</text>
+                    <text class='error'>已到达目的地</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+                </view>
+            </view>
+        </view>
+
+        <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+                <view class='address_1 address_flex'>
+                    <text>2018-08-21 11:00</text>
+                    <text class='error'>新订单</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+                </view>
+            </view>
+        </view>
+        <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+                <view class='address_1 address_flex'>
+                    <text>2018-08-21 11:00</text>
+                    <text class='error'>用户未支付</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+                </view>
+            </view>
+        </view>
+        <view class='address'>
+            <image src='../../img/3_03.png'></image>
+            <view class='panel'>
+                <view class='address_1 address_flex'>
+                    <text>2018-08-21 11:00</text>
+                    <text class='error'>用户未支付</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+                </view>
+                <view class='address_2'>
+                    <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+                </view>
+            </view>
+        </view>
+    <!--</scroll-view>-->
+
+    <!--个人中心图标-->
+    <view class="personal-icon" bindtap="bindViewTap">
+        <image src="../../img/personal.png"></image>
+    </view>
+
+</view>

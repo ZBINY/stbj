@@ -1,0 +1,150 @@
+/* pages/Quickorder/Quickorder.css */
+@import "../common/common.css";
+.quickorder{
+  /* padding: 45rpx 0; */
+}
+.panel{
+  width: 100%;
+}
+
+.address{
+  width: 750rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  margin-bottom: 11rpx;
+}
+
+.address image{
+  width: 20rpx;
+  height: 209rpx;
+  vertical-align: middle;
+  margin-right: 27rpx;
+  margin-top: 10rpx;
+}
+
+.address_1{
+  padding-top: 0;
+  padding-bottom: 25rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.address_2{
+  padding-top: 28rpx;
+  padding-bottom: 28rpx;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.address_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.address_1 .text{
+  display: block;
+  width: 100%;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+
+.noneborder{
+  border:none;
+}
+
+.danger{
+  color:#c31419;
+}
+
+.error{
+  color: #909090;
+  font-size: 26rpx;
+}
+
+.item{
+  background-color: #fff;
+  padding: 35rpx;
+  margin-bottom: 10rpx;
+}
+
+.title{
+  font-size: 30rpx;
+  color:#000;
+  margin-bottom: 29rpx;
+}
+
+.item_content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item_content text{
+  font-size: 24rpx;
+  color:#000;
+}
+
+.item_content text.font{
+  font-size: 16rpx;
+  color:#3b3b3b;
+  margin-right: 10rpx;
+}
+
+.item_content.font20{
+  font-size: 20rpx;
+  color:#000;
+  border-bottom:1rpx solid #f0f0f0;
+  padding: 25rpx 0;
+}
+
+.item_content.font20.none{
+  border:none;
+}
+
+.item_content image{
+  width: 39rpx;
+  height: 39rpx;
+  vertical-align: middle;
+}
+
+.red{
+  color:#ff0000;
+}
+
+.border{
+  border-bottom:1rpx solid #e6e6e6;
+  margin-bottom: 0;
+}
+
+.item_bottom{
+  text-align: center;
+  padding: 24rpx 0;
+  width: 750rpx;
+  background-color: #fff;
+}
+
+.color{
+  border:1rpx solid #dcdcdc;
+  color:#323232;
+  padding: 14rpx 18rpx;
+  font-size: 26rpx;
+  border-radius: 50rpx;
+  margin-right: 18rpx;
+}
+
+.success{
+  color:#c31419;
+  border:1rpx solid #c31419;
+  padding: 14rpx 18rpx;
+  font-size: 26rpx;
+  border-radius: 50rpx;
+  margin-right: 18rpx;
+}

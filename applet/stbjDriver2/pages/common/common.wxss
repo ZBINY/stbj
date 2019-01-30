@@ -1,0 +1,22 @@
+view , page {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.page{
+    width: 750rpx;
+    font-size: 30rpx;
+    color: #5f5f5f;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    overflow:hidden;
+    background-color: #f5f6fa;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

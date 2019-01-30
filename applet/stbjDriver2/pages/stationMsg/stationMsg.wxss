@@ -1,0 +1,45 @@
+@import "../common/common.wxss";
+
+.page{
+    padding: 15rpx 20rpx 20rpx;
+}
+.stationMsg-wrapper{
+    padding: 22rpx 22rpx 36rpx;
+    margin-bottom: 20rpx;
+    width: 100%;
+    background: #fff;
+}
+.time-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18rpx;
+}
+.time{
+    color: #252525;
+    font-size:22rpx;
+}
+.unread{
+    width: 47rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    text-align: center;
+    color: #fff;
+    background: #ff0000;
+    font-size: 14rpx;
+    border-radius: 5px;
+
+}
+.title{
+    display: block;
+    color: #252525;
+    font-size: 28rpx;
+    margin-bottom: 23rpx;
+}
+.desc{
+    display: block;
+    color: #717171;
+    font-size: 22rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}

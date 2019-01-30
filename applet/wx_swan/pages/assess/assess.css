@@ -1,0 +1,120 @@
+/* pages/assess/assess.css */
+@import "../common/common.css";
+page{
+  height: 100%;
+  background-color: #fff;
+}
+
+.assess{
+  width: 100%;
+}
+
+.top{
+  height: 305rpx;
+  text-align: center;
+  padding: 74rpx 0;
+  box-sizing: border-box;
+}
+
+.title{
+  font-size: 36rpx;
+  color: #000;
+}
+
+.start{
+  width: 62rpx;
+  height: 59rpx;
+  vertical-align: top;
+  margin: 60rpx 25rpx;
+}
+
+.start1{
+  width: 40rpx;
+  height: 37rpx;
+  vertical-align: middle;
+  margin-left: 40rpx;
+}
+
+.conts{
+  width: 750rpx;
+  height: auto;
+  background-color: #f5f6fa;
+  box-sizing: border-box;
+  padding: 24rpx;
+}
+.areas{
+  height:246rpx;
+  font-size: 24rpx;
+  margin: 0 auto;
+  overflow: hidden;   
+  position: relative; 
+  width: 100%;
+}
+.currentWordNumber{
+  font-size: 28rpx;
+  color: gray;
+  position: absolute;
+  left: 593rpx;
+  top: -6rpx;
+}
+.hint{
+   font-size: 28rpx;
+   position: absolute;
+   top: 120rpx;
+   left: 30rpx;
+   color: #FF6600;
+}
+
+.bottom{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50rpx 24rpx;
+}
+
+.bottoms{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.bottoms text:first-child{
+  color: #474747;
+  font-size: 28rpx;
+}
+
+.bottoms text:last-child{
+  color: #aaaaaa;
+  font-size: 28rpx;
+  margin-left: 40rpx;
+}
+
+.num{
+  background-color: #f5f6fa;
+  font-size: 18rpx;
+  width: 60rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  text-align: center;
+  margin-left: 40rpx;
+  display: inline-block;
+}
+
+.color{
+  color:#fff;
+  background-color:#ca161f; 
+}
+
+/*按钮*/
+.loginBtn { 
+  width: 100%; 
+ height: auto; 
+ margin-bottom: 0rpx; 
+ padding-bottom: 0rpx; 
+ border-radius: 10rpx;
+ margin-top: 190rpx; 
+ background-color: #ca161f!important; 
+}
+.loginBtn.button-hover{
+  background-color: rgba(202, 22, 31, .6)!important;
+}

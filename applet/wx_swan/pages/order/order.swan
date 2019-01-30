@@ -1,0 +1,86 @@
+<!--pages/order/order.wxml-->
+<view class='order'>
+  <view class='detail' s-if='tab'>
+    <view class='details'>
+      <text class='font26'>贵、重、易损物品</text>
+      <view bindtap='bindViewTap' data-id='0'>
+        <text class='font22'>钢琴、按摩椅、保险柜等</text>
+        <image src='../../img/right_04.png'></image>
+      </view>
+    </view>
+    <view class='details'>
+      <text class='font26'>家具拆装</text>
+      <view bindtap='bindViewTap' data-id='1'>
+        <text class='font22'>床、柜子、沙发、餐桌等</text>
+        <image src='../../img/right_04.png'></image>
+      </view>
+    </view>
+    <view class='details'>
+      <text class='font26'>家用电器</text>
+      <view bindtap='bindViewTap' data-id='2'>
+        <text class='font22'>冰箱、电视、洗衣机等</text>
+        <image src='../../img/right_04.png'></image>
+      </view>
+    </view>
+     <view class='details'>
+      <text class='font26'>空调拆装</text>
+      <view bindtap='bindViewTap' data-id='3'>
+        <text class='font22'>请选择空调型号</text>
+        <image src='../../img/right_04.png'></image>
+      </view>
+    </view>
+     <view class='details'>
+      <text class='font26'>包装材料</text>
+      <view bindtap='bindViewTap' data-id='4'>
+        <text class='font22'>资料箱、电脑箱、挂衣箱等</text>
+        <image src='../../img/right_04.png'></image>
+      </view>
+    </view>
+  </view>
+  <text class='title'>订单联系人资料</text>
+  <view class='orderdetail'>
+    <view class='address'>
+      <view class='imgs'>
+        <image src='../../img/11_23.png'></image>
+        <image src='../../img/12_23.png'></image>
+        <image src='../../img/13_23.png'></image>
+      </view>
+      <view class='panel'>
+        <view class='address_1 address_flex'>
+          <text>2018-08-21 11:00</text>
+        </view>
+        <view class='address_2'>
+          <input class='text' placeholder="请输入联系人姓名" />
+          <!-- <text class='text'>海淀区清河美馨家园信息科技大学西</text> -->
+        </view>
+        <view class='address_2'>
+          <input class='text' placeholder="请输入联系人手机号" />
+          <!-- <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='orderbottom'>
+  <view class='tip'>
+      <view>若产生高速费、停车费和搬运费，请用户额外支付</view>  
+      <view>若涉及逾时等候费，请与司机按收费标准结算</view>
+    </view>
+  <view class='write'>
+    <text class='font26s'>预估</text>
+    <text class='font48'>80.6</text>
+    <text class='font26s'>元</text>
+    <text class='jgmx' bindtap='bindViewTaps'>价格明细</text>
+  </view>
+  <view class='next' bindtap='receivable'>下单（无需支付）</view>
+</view>
+
+ <!-- 遮罩层 -->
+<view class="mask" catchtouchmove="preventD" s-if='showView'>
+  <!-- 查看我的订单 -->
+  <view class="receivable">
+    <image src='../../img/success.png' class='succe'></image>
+    <text class="faceToFace">下单成功</text>
+    <view class='back' bindtap='bindViewTapss'>查看我的订单</view>
+  </view>
+</view>

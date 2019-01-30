@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0, user-scalable=no"/>
+    <title>快速下单</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/lCalendar.css">
+    <!--<link rel="stylesheet" href="../css/ydui.css">-->
+    <style>
+        .areabox {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-wrap: wrap;
+            padding: .1rem;
+            position: absolute;
+            top: .8rem;
+            left: 0.15rem;
+            z-index: 100;
+            width: 3rem;
+            height: 2.8rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #fff;
+            border: 1px solid #ffe6e7;
+            background: #fff;
+            color: #343434;
+            font-size: .24rem;
+        }
+        .areabox li{
+            width: 25%;
+            text-align: center;
+            line-height: 33px;
+        }
+        .areabox-red2{
+            background: #c90f25;
+            color: #fff;
+        }
+
+        .amap-sug-result{
+            top: 67px !important;
+            left: 12px !important;
+            width: 94%;
+            height: calc(100vh - 85px);
+            overflow-y: scroll;
+        }
+        .auto-item{
+            padding: 15px 35px 20px;
+            font-size: 16px !important;
+            background: url("../img/map_icon.png") no-repeat left 15px center;
+            background-size: 15px auto;
+            border-bottom: 1px solid #eee;
+        }
+        .auto-item-span{
+            display: block;
+            margin-top: 5px;
+            font-size: 12px !important;
+        }
+    </style>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=d037f958163625f9c970302892e4032f&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+
+</head>
+<body style="background: #f5f6fa;">
+    <div class="order-wrapper">
+
+        <!--订单选择-->
+        <div id="order-msg1">
+            <div class="order-head head-left">
+                <p class="location location-city"><span>北京</span></p>
+                <div class="order-tab-wrapper">
+                    <ul class="order-tab-container">
+                        <li class="choose">标准货车</li>
+                        <li>金杯</li>
+                        <li>小型厢货</li>
+                        <li>护栏敞车</li>
+                        <li>护栏敞车</li>
+                        <li>护栏敞车</li>
+                        <li>护栏敞车</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-cartype">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/car.png">
+                            <div class="intro">
+                                <p class="weight"><span>800公斤</span>载重</p>
+                                <p class="msg"><span>1.8*1.2*1.1</span>长*宽*高</p>
+                                <p class="volume"><span>2.4方</span>载货体积</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/car.png">
+                            <div class="intro">
+                                <p class="weight"><span>800公斤</span>载重</p>
+                                <p class="msg"><span>1.8*1.2*1.2</span>长*宽*高</p>
+                                <p class="volume"><span>2.4方</span>载货体积</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/car.png">
+                            <div class="intro">
+                                <p class="weight"><span>800公斤</span>载重</p>
+                                <p class="msg"><span>1.8*1.2*1.3</span>长*宽*高</p>
+                                <p class="volume"><span>2.4方</span>载货体积</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/car.png">
+                            <div class="intro">
+                                <p class="weight"><span>800公斤</span>载重</p>
+                                <p class="msg"><span>1.8*1.2*1.4</span>长*宽*高</p>
+                                <p class="volume"><span>2.4方</span>载货体积</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/car.png">
+                            <div class="intro">
+                                <p class="weight"><span>800公斤</span>载重</p>
+                                <p class="msg"><span>1.8*1.2*1.5</span>长*宽*高</p>
+                                <p class="volume"><span>2.4方</span>载货体积</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="orderMsg-wrapper">
+                    <div class="orderlist-con">
+                        <img src="../img/3_03.png" alt="">
+                        <div class='panel'>
+                            <div class='address_1 address_flex'>
+                                <!--<input class="sp-date" placeholder="搬运时间（请选择）" type="text" id="dateTime">-->
+                                <p id="dateTime">搬运时间（请选择）</p>
+                            </div>
+                            <div class='address_2'>
+                                <!--<p><input type="text" id="J_Address" placeholder="从哪里搬出来"></p>-->
+                                <!--<p><input type="text" id="FROM" placeholder="从哪里搬出来" readonly="readonly"></p>-->
+                                <p id="FROM">从哪里搬出来</p>
+                                <p><input type="text" class="floorChoose" placeholder="搬出楼层"></p>
+                            </div>
+                            <div class='address_2'>
+                                <!--<p><input type="text" id="J_Address1" placeholder="想要搬到哪里去"></p>-->
+                                <!--<p><input type="text" id="TO" placeholder="想要搬到哪里去" readonly="readonly"></p>-->
+                                <p id="TO">想搬到哪里去</p>
+                                <p><input type="text" class="floorChoose2" placeholder="搬入楼层"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-personal">
+                    <a href="./personal.html"><img src="../img/p.png"></a>
+                </div>
+
+                <div class="order-btn">快速下单</div>
+            </div>
+        </div>
+
+        <!-- 地图 -->
+        <div class="map_box" style="display: none;">
+            <div class="map_in" style="width:100%;height:100%;">
+                <div class="sleCity">
+                    <div class="selCityIn">
+                        <div class="cityLef">
+                            <!--<p id="cityName">北京</p>-->
+                            <p id="cityName"></p>
+                        </div>
+                        <div class="mapInp">
+                            <input type="text" id="pickerInput" autocomplete="off" class="inpval" placeholder="请输入具体的地址">
+                            <div class="amap-ui-poi-picker-search-results-container hidden"></div>
+                            <div class="amap-ui-poi-picker-sugg-container no-sugg hidden"></div>
+                            <div class="amap-ui-poi-picker-search-results-container hidden" style="height: 691px;"></div>
+                        </div>
+                        <div class="closeCon" id="cancel">取消</div>
+                        <!--  <div class="citySel"></div> -->
+                    </div>
+                </div>
+                <div id="container" class="amap-container" style="background: rgb(252, 249, 242);"></div>
+                <!-- <div id="tip"></div> -->
+                <!--<div class="mapFooter">-->
+                    <!--<div class="footerIn">-->
+                        <!--<div class="dragInfo">-->
+                            <!--<p class="mapBuild">粮食局小区</p>-->
+                            <!--<p class="mapAdd">内蒙古自治区呼和浩特市新城区中山东路街道乌兰恰特东街12号粮食局小区</p>-->
+                        <!--</div>-->
+                        <!--<a class="confirmAdd" onclick="fn()">确定</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery.selector-px.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/main.js?v=1.0"></script>
+<script src="../js/map_index.js"></script>
+<!--城市三级联动弹框调用文件-->
+<!--<script src="../js/ydui.citys.js"></script>-->
+<!--<script src="../js/ydui.js"></script>-->
+<!--时间选择插件-->
+<script src="../js/lCalendar.js"></script>
+<script>
+// 搬家时间选择插件
+    //$('body').height($(window).height());
+    var mindate = new Date();
+    var minstr = "" + mindate.getFullYear() + "-";
+    minstr += (mindate.getMonth()+1) + "-";
+    minstr += mindate.getDate() + "-";
+    minstr += mindate.getHours() + "-";
+    minstr += mindate.getMinutes();
+    //
+    var maxdate = new Date(mindate);
+    maxdate.setDate(mindate.getDate()+14);
+    var maxstr = "" + maxdate.getFullYear() + "-";
+    maxstr += (maxdate.getMonth()+1) + "-";
+    maxstr += maxdate.getDate() + "-";
+    maxstr += maxdate.getHours() + "-";
+    maxstr += maxdate.getMinutes();
+    if(maxstr%10==0){
+        maxstr=maxstr;
+    }
+    $("#dateTime").attr("data-lcalendar",minstr + "," + maxstr);
+    var calendardatetime = new lCalendar();
+    calendardatetime.init({
+        'trigger': '#dateTime',
+        'type': 'datetime'
+    });
+
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            slideChangeTransitionEnd: function () {
+                var _index = this.activeIndex;//切换结束时，告诉我现在是第几个slide
+                // alert(_index);
+                $('.order-tab-container li').removeClass('choose');
+                $('.order-tab-container li').eq(_index).addClass('choose');
+
+                if (($('.order-tab-container .choose').offset().left)>= 250){
+                    $('.order-tab-container').scrollLeft('150');
+                }
+                if (($('.order-tab-container .choose').offset().left)<= 30){
+                    $('.order-tab-container').scrollLeft('0');
+                }
+            }
+        }
+    });
+</script>
+<script>
+    $(function(){
+        //  -------------数据部分开始--------------
+        var floor = ['有电梯，无需楼层费','无电梯，1楼','无电梯，2楼','无电梯，3楼','无电梯，4楼','无电梯，5楼','无电梯，6楼'];
+        // 时长数据
+        // 小时
+        var spoHour = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"];
+        // 分钟
+        var spoMinute = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"];
+        //  -------------数据部分开始--------------
+
+        // 楼层
+        $.scrEvent({
+            data: floor,
+            evEle: '.floorChoose',
+            title: '楼层',
+            defValue: '有电梯，无需楼层费',
+            afterAction: function (data) {
+
+                $('.floorChoose').val(data);
+            }
+        });
+        $.scrEvent({
+            data: floor,
+            evEle: '.floorChoose2',
+            title: '楼层',
+            defValue: '有电梯，无需楼层费',
+            afterAction: function (data) {
+
+                $('.floorChoose2').val(data);
+            }
+        });
+        // // 年月日 时分
+        // $.dateSelector({
+        //     evEle: '.sp-date',
+        //     year: 2018,
+        //     month: 12,
+        //     day: 21,
+        //     startYear: '2018',
+        //     endYear: '2118',
+        //     timeBoo: true,
+        //     afterAction: function (d1, d2, d3, d4, d5) {
+        //         $('.sp-date').val(d1 + '-' + d2 + '-' + d3 + '  ' + d4 + ':' + d5);
+        //     }
+        // });
+    });
+</script>
+</body>
+</html>

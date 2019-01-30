@@ -1,0 +1,56 @@
+
+<!-- 百度地图 -->
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+</view>
+
+<!-- 搜索框 -->
+<view class='search'>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}} <image src='../../img/xia.png'></image>
+      </view>
+    </picker>
+  </view>
+  <text class='line'></text>
+  <view class='search_p'>
+      <image src='../../img/Searchicon.png'></image>
+      <input placeholder="搜索" bindtap='bindInputPage' bindblur='bindInputBlur' confirm-type="search" bindinput="bindKeyInput" type="text" placeholder-class="input_h" value='{=val=}' />
+    </view>
+</view>
+
+<view class='content'>
+  <view class='contents' s-for="item, index in result" bindtap='bindViewTap' data-address='{{item.address}}' data-province='{{item.province}}' data-district='{{item.district}}' data-name='{{item.name}}' data-city='{{item.city}}'>
+    <view class='top'>
+      <text class='world'>{{item.name}}</text>
+      <text class='ps' s-if='index === 0'>当前位置</text>
+    </view>
+    <view class='bottom'>{{item.address ? item.address : item.province + item.city + item.district}}</view>
+  </view>
+
+  <!-- <view class='contents'>
+    <view class='top'>
+      <text class='world'>海淀区清河梅家园(北京信息科技大学西)</text>
+    </view>
+    <view class='bottom'>北京市海淀区小营东路16号</view>
+  </view>
+
+  <view class='contents'>
+    <view class='top'>
+      <text class='world'>海淀区清河梅家园(北京信息科技大学西)</text>
+    </view>
+    <view class='bottom'>北京市海淀区小营东路16号</view>
+  </view> -->
+</view>
+
+
+<!-- <view class="place_info">
+  <text>{{placeData.title}}</text>
+  <text>{{placeData.address}}</text>
+  <text>{{placeData.telephone}}</text>
+</view> -->
+
+<!-- <view class="sug_info">
+  <text>{{sugData}}</text>
+</view> -->

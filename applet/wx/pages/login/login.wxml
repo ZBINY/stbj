@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="container"> 
+  <view class="login-icon"> 
+  <image class="login-img" src="../../img/logo.png"></image> 
+  </view> 
+  <view class="login-from"> 
+    <!--账号-->
+    <view class="inputView"> 
+      <image class="nameImage" src="../../img/phone.png"></image> 
+      <input class="inputText" placeholder="请输入账号" bindinput="phoneInput" /> 
+    </view> 
+    <view class="line"></view> 
+    
+    <!--密码-->
+    <view class="inputView"> 
+      <image class="keyImage" src="../../img/Security On.png"></image> 
+      <input class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" /> 
+      <text class='code' bindtap='countdown' disabled="{{disabledCode}}">{{text}}</text>
+    </view> 
+    <view class="line lines"></view> 
+    <!--按钮-->
+    <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="bindViewTapLogin">登录</button> 
+  </view>
+  <view class='protocol'>登录即表示同意<text>《四通用户协议》</text></view> 
+</view>

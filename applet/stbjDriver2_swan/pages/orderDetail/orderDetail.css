@@ -1,0 +1,264 @@
+@import "../common/common.css";
+
+.address{
+    width: 750rpx;
+    background-color: #fff;
+    padding: 50rpx 25rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 28rpx;
+}
+.address image{
+    width: 20rpx;
+    height: 209rpx;
+    vertical-align: middle;
+    margin-right: 27rpx;
+    margin-top: 10rpx;
+}
+.panel{
+    width: 93%;
+}
+.address_1{
+    padding-top: 0;
+    padding-bottom: 25rpx;
+    border-bottom: 1px solid #e6e6e6;
+}
+.address_2{
+    padding-top: 28rpx;
+    padding-bottom: 28rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.address_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.address_1 .orderNum{
+    font-size: 26rpx;
+    color: #909090;
+}
+.address_2 .navgation{
+    width: 66rpx;
+    line-height: 38rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+.customerMsg-wrapper{
+    margin-top: 10rpx;
+    padding: 38rpx 38rpx 16rpx 34rpx;
+    background: #fff;
+}
+.Msg-title{
+    display: block;
+    margin-bottom: 20rpx;
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #000;
+}
+.customerMsg text{
+    font-size: 24rpx;
+    color: #000;
+}
+.customerMsg  .phoneNum{
+    margin-left: 30rpx;
+}
+.customerMsg image{
+    width: 40rpx;
+    height: 40rpx;
+    padding: 10rpx;
+}
+.cost-wrapper,.order-total{
+    margin-top: 10rpx;
+    padding:43rpx 38rpx 20px 34rpx;
+    background: #fff;
+    font-size: 0;
+    overflow: hidden;
+}
+.cost-wrapper .title{
+    margin-bottom: 15rpx;
+    color: #000;
+    font-size: 30rpx;
+    font-weight: 600;
+}
+.cost-list{
+    display: flex;
+    justify-content: space-between;
+    height:70rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+    font-size: 20rpx;
+}
+.cost-list .cost-list-lft{
+    line-height: 70rpx;
+}
+.cost-list-rgt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cost-list-rgt .cost-remark{
+    color: #afafaf;
+    font-size: 18rpx;
+}
+.cost-add,.large-add{
+    box-sizing: content-box;
+    margin: 10rpx;
+    color: #ff0000;
+    width: 31rpx;
+    height: 31rpx;
+    line-height: 27rpx;
+    border: 1px solid #ff0000;
+    border-radius: 50%;
+    font-size: 30rpx;
+    text-align: center;
+}
+.cost-add{
+    float: right;
+    margin-top: 25rpx;
+}
+.order-total{
+    font-size: 20rpx;
+}
+.order-total-list{
+    display: flex;
+    justify-content: space-between;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+.order-total-list:nth-child(1) text:last-child{
+    color: #ff0000;
+}
+.cost-addWrapper{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    overflow: hidden;
+    height: 70rpx;
+    font-size: 20rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+.cost-addWrapper input{
+    min-height: 2rem;
+}
+.cost-addWrapper-lft{
+    float: left;
+    padding: 0 14rpx 0 0;
+    color: #a9a9a9;
+    min-height: 1.1rem;
+    line-height: 2.1rem;
+    border-bottom: 1px solid #a9a9a9;
+}
+.cost-addWrapper-rgt{
+    float: right;
+    /*padding:0 8rpx 0 20rpx;*/
+    width: 75rpx;
+    height: 30rpx;
+    color: #ff0000;
+    text-align: right;
+    border-bottom: 1px solid #ff0000;
+}
+.large-add-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70rpx;
+    font-size: 20rpx;
+    font-weight: 600;
+    color: #000;
+}
+.hand-write{
+    border-bottom: 1px solid #a9a9a9;
+    width: 140rpx;
+}
+.order-status{
+  height: 97rpx;
+  line-height:97rpx;
+  text-align: center;
+  color: #fff;
+  background: #ff0000;
+  font-size: 26rpx;
+}
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+.receivable{
+  position: absolute;
+  left: calc(50vw - 286rpx);
+  bottom: calc(50vh - 218.5rpx);
+  width: 572rpx;
+  height: 437rpx;
+  background: #fff;
+  overflow: hidden;
+}
+.receivable .close{
+  display: block;
+  float: right;
+  padding: 15rpx;
+  width: 21rpx;
+  height: 21rpx;
+}
+.receivable .title{
+  margin-top: 54rpx;
+  display: block;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #000;
+}
+.receivable-mode{
+  display: flex;
+  justify-content: space-around; 
+}
+.faceToFace,.underLine{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90rpx;
+}
+.faceToFace image{
+  width: 81rpx;
+  height: 81rpx;
+}
+.underLine image{
+  width: 91rpx;
+  height: 86rpx;
+}
+.faceToFace text,.underLine text{
+  margin-top: 17rpx;
+}
+.mask .qrCode{
+  height: 674rpx;
+  bottom: calc(50vh - 337rpx);
+}
+.qrCode-price{
+  display: block;
+  line-height: 76rpx;
+  text-align: center;
+  font-size: 33rpx;
+  color: #ff0000;
+}
+.qrcodePic{
+  display: block;
+  margin: 0 auto;
+  width: 468rpx;
+  height: 459rpx;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}

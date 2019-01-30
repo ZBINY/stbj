@@ -1,0 +1,44 @@
+<view class='personal'>
+  <view class='top'>
+    <view class='image'>
+      <image src='../../img/icon.png'></image>
+    </view>
+    <text>18888888888</text>
+  </view>
+  <view class='per_bottom'>
+    <view class='item' bindtap='bindViewTapOrder'>
+      <view class='left'>
+        <image src='../../img/order_icon.png' class='order'></image>
+        <text>我的订单</text>
+      </view>
+      <image src='../../img/right.png' class='right_icon'></image>
+    </view>
+
+    <view class='item' bindtap='bindViewTapCoupon'>
+      <view class='left'>
+        <image src='../../img/qu_icon.png' class='qu'></image>
+        <text>我的优惠券</text>
+      </view>
+      <image src='../../img/right.png' class='right_icon'></image>
+    </view>
+
+    <view class='item' bindtap='bindViewTapCharge'>
+      <view class='left'>
+        <image src='../../img/q_Coins.png' class='q'></image>
+        <text>收费标准</text>
+      </view>
+      <image src='../../img/right.png' class='right_icon'></image>
+    </view>
+
+    <view class='item' bindtap='bindViewTapCs'>
+      <view class='left'>
+        <image src='../../img/Headset.png' class='Headset'></image>
+        <text>客服中心</text>
+      </view>
+      <image src='../../img/right.png' class='right_icon'></image>
+    </view>
+  </view>
+  <view class='fiexd_bottom' bindtap='bindViewTap'>
+    <text>切换账号</text>
+  </view>
+</view>

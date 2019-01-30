@@ -1,0 +1,114 @@
+.map_container{
+    height: 640rpx;
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.place_info {
+    padding: 0 5px;
+}
+
+.search{
+  width: 702rpx;
+  margin: 0 auto;
+  margin-bottom: 24rpx;
+  background-color: #f5f5f5;
+  /* height: 80rpx; */
+  /* line-height: 80rpx; */
+  border-radius: 20rpx;
+  padding: 22rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.picker{
+  font-size: 26rpx;
+  color:#646464;
+}
+
+.picker image{
+  width: 16rpx;
+  height: 8rpx;
+  vertical-align: middle;
+  margin-left: 13rpx;
+}
+
+.search_p{
+  background-color: none;
+  width: 480rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.show .search_p{
+  width: 400rpx;
+}
+
+.line{
+  height: 26rpx;
+  width: 1rpx;
+  background-color: #dcdcdc;
+  margin:0 23rpx;
+}
+
+.search_p image{
+  width: 24rpx;
+  height:24rpx;
+  margin-right: 13rpx;
+}
+
+.search_p input{
+  font-size: 26rpx;
+}
+
+.searchcion{
+  color:#646464!important;
+  font-size: 24rpx!important;
+}
+
+.content{
+  width: 702rpx;
+  margin: 0 auto;
+}
+
+.contents{
+  border-bottom:1rpx solid #eeeeee;
+}
+
+.contents:last-child{
+  border: none;
+}
+
+
+.top{
+  margin-bottom: 18rpx;
+}
+
+.top .world{
+  font-size: 26rpx;
+  color:#646464;
+}
+
+.top .ps{
+  font-size: 14rpx;
+  background-color: #ff302d;
+  border-radius: 20rpx;
+  color: #fff;
+  padding: 7rpx;
+  margin-left: 10rpx;
+}
+
+.bottom{
+  font-size: 20rpx;
+  color:#969696;
+  margin-bottom: 34rpx;
+}

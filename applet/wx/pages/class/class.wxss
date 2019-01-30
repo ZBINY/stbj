@@ -1,0 +1,135 @@
+/* @import '../../common/common.wxss'; */
+
+page,.main {
+    height: 100%;
+    background-color: #fff;
+}
+
+.class-left {
+    float: left;
+    width: 200rpx;
+    height: 100%;
+    box-sizing: border-box;
+    background: #f7f7f7;
+}
+
+.class-left .cate-list {
+    height: 120rpx;
+    line-height:120rpx;
+    text-align: center;
+    color: #323232;
+    font-size: 28rpx;
+}
+
+.class-left .cate-list.on {
+  background: #fff;
+}
+
+.class-right {
+  float: right;
+  width: 550rpx;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cate-box {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cate-title {
+    position: relative;
+    height: 120rpx;
+    line-height: 120rpx;
+    margin:0rpx 15rpx 0rpx 15rpx;
+    text-align: center;
+    font-size: 28rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #e6e6e6;
+}
+
+.qr{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 110rpx;
+  line-height: 110rpx;
+  background-color: #c41419;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 34rpx;
+}
+
+
+
+
+
+.navbar__item {
+   height: 120rpx;
+    line-height:120rpx;
+    text-align: center;
+    color: #323232;
+    font-size: 28rpx;
+}
+
+.navbar__item_on {
+    background: #fff;
+}
+
+.navbar__slider {
+    position: absolute;
+    display: block;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #c9151e;
+    transition: transform .3s;
+}
+
+.navbar__title{
+    display: inline-block;
+    font-size: 15px;
+    max-width: 8em;
+    text-align: center;
+    background-color: #fff;
+}
+
+swiper {
+  height: 100%;
+}
+
+swiper-item{
+  width: 100%;
+  /* padding-top: 20rpx; */
+  text-align: center;
+  background-color: #fff;
+}
+
+.swiper_content{
+  position: absolute;
+  top: 88rpx;
+  width: 100%;
+  height: 410rpx;
+  background-color: #fff;
+}
+
+.content{
+  position: relative;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin:0rpx 10rpx 0rpx 25rpx;
+  text-align: center;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.mg{
+  margin-right: 15rpx;
+}

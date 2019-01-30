@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="head w1200 flex">
+    <div class="area">
+        <p><span class="area-choose">北京</span>[ 上海 广州 深圳 <span class="area-change">切换城市</span> ]</p>
+
+        <!--切换城市-->
+        <ul class="areabox flex" style="display:none;">
+            <li class="areabox-red2">北京</li>
+            <li>长沙</li>
+            <li>成都</li>
+            <li>唐山</li>
+            <li>天津</li>
+            <li>西安</li>
+            <li>南京</li>
+            <li>贵阳</li>
+            <li>合肥</li>
+            <li>福州</li>
+            <li>武汉</li>
+            <li>郑州</li>
+            <li>上海</li>
+            <li>深圳</li>
+            <li>厦门</li>
+        </ul>
+    </div>
+    <div class="head-choose flex">
+        <p>登录/注册</p>
+        <p>我的订单<i></i></p>
+        <p class="wechat wechat01">
+            <span>小程序<i></i></span>
+            <span class="wechat_applet" style="display: none;">
+                <img src="../img/service/WeChat_applet.png" alt="小程序">
+            </span>
+        </p>
+        <p class="wechat wechat02">
+            <span>公众号<i></i></span>
+            <span class="wechat_applet" style="display: none;">
+                <img src="../img/service/WeChat_applet.png" alt="公众号">
+            </span>
+        </p>
+    </div>
+</div>
+<div class="sec-head w1200 flex">
+    <i></i>
+    <ul class="nav flex">
+        <li class="choose choose_click">网站首页</li>
+        <li>收费标准</li>
+        <li>服务项目</li>
+        <li>区域列表</li>
+        <li>合作案例</li>
+        <li>四通新闻</li>
+        <li>关于四通</li>
+    </ul>
+</div>
+
+<div class="login" style="display: none;">
+    <div class="login-box">
+        <div class="loginbox-rgt">
+            <p>登录</p>
+            <ul class="content">
+                <li class="tel"><input type='text'
+                                       onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)"
+                                       onblur="this.v();" /placeholder="请输入手机号码">
+                </li>
+                <li class="verifyCode">
+                    <i>58794</i>
+                    <input type="text" placeholder="请输入图形验证码">
+                    <p class="red">看不清？换一张</p>
+                </li>
+                <li class="msgCode">
+                    <input type="number" placeholder="获取短信验证码">
+                    <p class="red">获取短信验证码</p>
+                </li>
+            </ul>
+            <p class="login-btn">登录</p>
+            <p class="login-agreement">点击登录，即表示同意《四通搬家服务协议》</p>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

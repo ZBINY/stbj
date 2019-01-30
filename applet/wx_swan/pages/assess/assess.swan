@@ -1,0 +1,60 @@
+<!--pages/assess/assess.wxml-->
+<view class='assess'>
+  <view class='top'>
+    <view class='title'>对本次服务，您是否满意呢？</view>
+    <view>
+      <image s-for="item, index in start" src='{{item === true ? "../../img/start.png" : "../../img/none.png"}}' class='start' bindtap='bindStar' data-index='{{index}}'></image>
+      <!-- <image src='../../img/start.png' class='start' bindtap='bindStar' data-id='1'></image> -->
+      <!-- <image src='../../img/start.png' class='start' bindtap='bindStar' data-id='2'></image> -->
+      <!-- <image src='../../img/start.png' class='start' bindtap='bindStar' data-id='3'></image> -->
+      <!-- <image src='../../img/none.png' class='start' bindtap='bindStar' data-id='4'></image> -->
+    </view>
+  </view>
+  <view class="conts">
+    <textarea class="areas" placeholder="本次搬家服务您是否满意呢？说说优点和美中不足吗？评论后立即获得5元搬家优惠券！" minlength="{{min}}" maxlength="{{max}}" bindinput="inputs"> 
+    </textarea>
+  </view>
+  <view class='bottom'>
+    <view class='bottoms'>
+        <text>服务态度</text>
+        <image s-for="item, index in start1" src='{{item === true ? "../../img/start1.png" : "../../img/none1.png"}}' class='start1' bindtap='bindStar1' data-index='{{index}}'></image>
+        <!-- <image src='../../img/start1.png' class='start1'></image>
+        <image src='../../img/start1.png' class='start1'></image>
+        <image src='../../img/start1.png' class='start1'></image>
+        <image src='../../img/none1.png' class='start1'></image> -->
+        <text>好</text>
+    </view>
+    <view class='bottoms'>
+        <text>专业水平</text>
+        <image s-for="item, index in start2" src='{{item === true ? "../../img/start1.png" : "../../img/none1.png"}}' class='start1' bindtap='bindStar2' data-index='{{index}}'></image>
+        <!-- <image src='../../img/start1.png' class='start1'></image> -->
+        <!-- <image src='../../img/start1.png' class='start1'></image>
+        <image src='../../img/start1.png' class='start1'></image>
+        <image src='../../img/start1.png' class='start1'></image>
+        <ima
+        dsf../../img/none1.png' class='start1'></image> -->
+        <text>好</text>
+    </view>
+    <view class='bottoms'>
+        <text>服务人数</text>
+        <text class='num {{item.key === true ? "color" : ""}}' s-for="item, index in start3" bindtap='bindStar3' data-index='{{index}}'>{{item.name}}人</text>
+        <!-- <text class='num'>5人</text>
+        <text class='num'>6人</text>
+        <text class='num'>7人</text> -->
+        <text>好</text>
+    </view>
+
+    <!--按钮-->
+    <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="bindConfirm">评价</button> 
+  </view>
+</view>
+
+ <!-- 遮罩层 -->
+<view class="mask" catchtouchmove="preventD" s-if='showView'>
+  <!-- 感谢评价 -->
+  <view class="receivable">
+    <image src='../../img/success.png' class='succe'></image>
+    <text class="faceToFace">感谢评价</text>
+    <view class='back' bindtap='bindViewTap'>返回首页</view>
+  </view>
+</view>

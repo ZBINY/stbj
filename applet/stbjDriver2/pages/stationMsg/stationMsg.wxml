@@ -1,0 +1,20 @@
+<view class="page">
+    <view class="stationMsg-wrapper">
+        <view class="time-wrapper">
+            <text class="time">2018-3-06 12:00</text>
+            <text class="unread">未读</text>
+        </view>
+        <text class="title">这里是你的标题标题标题标题</text>
+        <text class="desc">这里是你的描述这里是你的描述这里是你的描述这里是你的描述 副本</text>
+    </view>
+
+    <view class="stationMsg-wrapper">
+        <view class="time-wrapper">
+            <text class="time">2018-3-06 12:00</text>
+            <text class="unread">未读</text>
+        </view>
+        <text class="title">这里是你的标题标题标题标题</text>
+        <text class="desc">这里是你的描述这里是你的描述这里是你的描述这里是你的描述 副本</text>
+    </view>
+
+</view>

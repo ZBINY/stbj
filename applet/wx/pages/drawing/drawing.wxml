@@ -1,0 +1,38 @@
+<!--pages/drawing/drawing.wxml-->
+<view class='drawing'>
+  <view class='flex'>
+    <text class='font26'>订单号：547895124574212</text>
+    <text class='font32'>￥687</text>
+  </view>
+  <view class='flex'>
+    <text class='font26'>发票类型：装卸搬运服务</text>
+  </view>
+  <view class='flex'>
+    <view>
+      <text class='font26'>抬头类型：</text>
+      <text class='button {{on === 0 ? "on" : null}}' bindtap='tabChange'>公司</text>
+      <text class='button {{on === 1 ? "on" : null}}' bindtap='tabChange1'>个人</text>
+    </view>
+  </view>
+  <view class='flex'>
+    <input  bindinput="bindKeyInput" placeholder="填写您的发票抬头" class='font26 color'/>
+  </view>
+  <view class='flex'>
+    <input  bindinput="bindKeyInput" placeholder="纳税人识别号" class='font26 color'/>
+  </view>
+  <view class='flex'>
+    <input  bindinput="bindKeyInput" placeholder="请输入您的邮箱" class='font26 color'/>
+  </view>
+  
+</view>
+<view class='confirm' bindtap='bindConfirm'>确认开票</view>
+
+ <!-- 遮罩层 -->
+<view class="mask" catchtouchmove="preventD" wx:if='{{showView}}'>
+  <!-- 申请成功 -->
+  <view class="receivable">
+    <image src='../../img/success.png' class='succe'></image>
+    <text class="faceToFace">申请成功</text>
+    <view class='back' bindtap='bindViewTap'>返回首页</view>
+  </view>
+</view>

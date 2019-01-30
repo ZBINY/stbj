@@ -1,0 +1,149 @@
+<view class="page">
+<view>
+
+ <view class="navbar__item navbarHead">
+            <!-- <image src='../../img/Headportrait_03.png' class='Headportrait_03' bindtap='bindViewTapHome'></image> -->
+            <image src='../../img/marker_red.png'></image>
+            <picker class='po' bindchange="bindPickerChanges" value="{{index}}" range="{{array}}">
+              <view class="picker">
+                {{array[index]}}
+              </view>
+            </picker>
+          </view>
+<scroll-view scroll-x="true" class="nav" scroll-left="{=navScrollLeft=}" scroll-with-animation="{{true}}">
+  <view class="navbar">
+      <block s-for="item, index in tabs" s-key="*this">
+          <view s-if="index !== 0" id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+            <view class="navbar__title">{{item.name}}</view>
+          </view>
+           
+      </block>
+      <!-- <view class="navbar__slider" style="width: {{sliderWidth}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view> -->
+  </view>
+      </scroll-view>
+  
+</view>
+  
+  <view class='swiper_content'>
+    <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange">
+      <swiper-item>
+        <image src='../../img/car_05.png'></image>
+        <view>标准货车</view>
+      </swiper-item>
+      <swiper-item class="swiper_content_1">
+        <image src='../../img/car_05.png' class='car'></image>
+        <view class='detail'>
+          <text>800公斤</text>
+          <text>1.8*1.2*1.1</text>
+          <text>2.4方</text>
+        </view>
+        <view class='detail font24'>
+          <text>载重</text>
+          <text>长*宽*高</text>
+          <text>载货体积</text>
+        </view>
+        <view>
+          <image src='../../img/right_03.png' class='right_03' id="2" bindtap="navTabClick"></image>
+        </view>
+      </swiper-item>
+      <swiper-item class='swiper_content_1'>
+      <image src='../../img/car_05.png' class='car'></image>
+        <view class='detail'>
+          <text>800公斤</text>
+          <text>1.8*1.2*1.1</text>
+          <text>2.4方</text>
+        </view>
+        <view class='detail font24'>
+          <text>载重</text>
+          <text>长*宽*高</text>
+          <text>载货体积</text>
+        </view>
+      <image src='../../img/right_03.png' class='right_03' id="3" bindtap="navTabClick"></image>
+        <!-- <view>金杯车</view> -->
+      </swiper-item>
+       <swiper-item class='swiper_content_1'>
+      <image src='../../img/car_05.png' class='car'></image>
+        <view class='detail'>
+          <text>800公斤</text>
+          <text>1.8*1.2*1.1</text>
+          <text>2.4方</text>
+        </view>
+        <view class='detail font24'>
+          <text>载重</text>
+          <text>长*宽*高</text>
+          <text>载货体积</text>
+        </view>
+      <image src='../../img/right_03.png' class='right_03' id="4" bindtap="navTabClick"></image>
+        <!-- <view>小型箱货</view> -->
+      </swiper-item>
+       <swiper-item class='swiper_content_1'>
+      <image src='../../img/car_05.png' class='car'></image>
+        <view class='detail'>
+          <text>800公斤</text>
+          <text>1.8*1.2*1.1</text>
+          <text>2.4方</text>
+        </view>
+        <view class='detail font24'>
+          <text>载重</text>
+          <text>长*宽*高</text>
+          <text>载货体积</text>
+        </view>
+      <image src='../../img/right_03.png' class='right_03' id="1" bindtap="navTabClick"></image>
+        <!-- <view>护栏敞车</view> -->
+      </swiper-item>
+    </swiper> 
+  </view>
+
+  <view class='address'>
+    <image src='../../img/3_03.png'></image>
+    <view style='width:90%;'>
+      <view class='address_1'>
+        <!-- <text>2018-08-21 11:00</text> -->
+
+        <picker class='pickerss' mode="date" value="{{date}}" start="{{date}}" end="2020-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+
+        <!-- <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{region[0]}} {{region[1]}}:{{region[2]}}
+          </view>
+        </picker> -->
+      </view>
+      <view class='address_2'>
+        <text bindtap='bindViewTaps' data-id='0'>{{startAddress ? startAddress : '从哪里搬出来？'}}</text>
+        <view class='border'></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" range-key="{{'name'}}" class='picker_area'>
+          <view class="picker pickers">{{indexFlag === false ? '搬出楼层' : objectArray[index].name}} </view>
+        </picker>
+        <!-- <text>搬出楼层</text> -->
+      </view>
+      <view class='address_3'>
+        <text bindtap='bindViewTaps' data-id='1'>{{endAddress ? endAddress : '想要搬到哪里去？'}}</text>
+        <view class='border'></view>
+        <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{objectArray1}}" range-key="{{'name'}}" class='picker_area'>
+          <view class="picker pickers">{{indexFlag1 === false ? '搬入楼层' : objectArray1[index1].name}} </view>
+        </picker>
+        <!-- <text>搬入楼层</text> -->
+      </view>
+    </view>
+    
+  </view>
+
+  <image src='../../img/1_07.png' class='customService'></image>
+  <image src='../../img/2_03.png' class='phone'></image>
+  <image src='../../img/p.png' class='user' bindtap='bindViewTapHome'></image>
+
+  <view class='bottom'>
+    <view bindtap='bindViewTap' data-id='0'>快速下单</view>
+    <view bindtap='bindViewTap' data-id='1'>获取报价</view>
+  </view>
+</view>

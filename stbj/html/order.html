@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线下单</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!--<link rel="stylesheet" href="../js/laydate/theme/default/laydate.css">-->
+</head>
+<body>
+<div class="w_100">
+    <!--头部-->
+    <div class="sec-head flex">
+        <div class="head-left flex">
+            <i></i>
+            <ul class="nav flex navs">
+                <li>网站首页</li>
+                <li class="choose_click">在线下单</li>
+                <li>收费标准</li>
+                <li>服务项目</li>
+                <li>关于四通</li>
+            </ul>
+        </div>
+        <ol class="location flex">
+            <li>
+                <span>北京</span>
+            </li>
+            <li>
+                <span>登录</span>
+            </li>
+        </ol>
+        <!--切换城市-->
+        <ul class="areabox flex" style="display:none;">
+            <li class="areabox-red2">北京</li>
+            <li>长沙</li>
+            <li>成都</li>
+            <li>唐山</li>
+            <li>天津</li>
+            <li>西安</li>
+            <li>南京</li>
+            <li>贵阳</li>
+            <li>合肥</li>
+            <li>福州</li>
+            <li>武汉</li>
+            <li>郑州</li>
+            <li>上海</li>
+            <li>深圳</li>
+            <li>厦门</li>
+        </ul>
+
+    </div>
+    <!--登陆-->
+    <div class="loginWrapper"></div>
+
+    <!--企业搬家/跨域搬家-->
+    <div class="content flex">
+        <ul class="left flex">
+            <li class="select">快速下单 <img src="../img/order/right.png" alt=""></li>
+            <li>居民搬家 <img src="../img/order/right.png" alt=""></li>
+            <li>企业搬家 <img src="../img/order/right.png" alt=""></li>
+            <li>跨域搬家 <img src="../img/order/right.png" alt=""></li>
+            <li>我的订单 <img src="../img/order/right.png" alt=""></li>
+            <li>我的优惠券 <img src="../img/order/right.png" alt=""></li>
+        </ul>
+        <!--快速下单-->
+        <div class="right placeAnOrder">
+            <div class="right_content bg">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/order/car_03.png" alt="" style="opacity: 1;">
+                            <div class="msg">
+                                <p>金杯车</p>
+                                <p>¥200</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/order/car_03.png" alt="">
+                            <div class="msg">
+                                <p>金杯车1</p>
+                                <p>¥200</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/order/car_03.png" alt="">
+                            <div class="msg">
+                                <p>金杯车2</p>
+                                <p>¥200</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/order/car_03.png" alt="">
+                            <div class="msg">
+                                <p>金杯车4</p>
+                                <p>¥200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next button-next"></div>
+                    <div class="swiper-button-prev button-prev"></div>
+                </div>
+                <div class="line"></div>
+                <div class="bg1 right1 bgleft">
+                    <p>请输入搬家起点、终点 <span class="font12">有中途装卸</span></p>
+                    <ul style="overflow: visible;">
+                        <li><img src="../img/order/Location1.png" alt=""><input type="text" placeholder="起点"></li>
+                        <li><span style="margin-right: 10px;">楼层</span><input type="text" placeholder="（有电梯无需填写）"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="../img/order/Location1.png" alt=""><input type="text" placeholder="起点"></li>
+                        <li><span style="margin-right: 10px;">楼层</span><input type="text" placeholder="（有电梯无需填写）"></li>
+                    </ul>
+                </div>
+                <div class="bg1 right1 bgleft1">
+                    <ul>
+                        <li><input type="text" placeholder="搬家时间：" id="test1"></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right_content bg">
+                <div class="bg1 right1">
+                    <p>联系人资料（必填）</p>
+                    <ul>
+                        <li><img src="../img/order/Avatar1.png" alt=""><input type="text" placeholder="您的姓名"></li>
+                        <li><img src="../img/order/phone.png" alt=""><input type="text" placeholder="您的电话"></li>
+                    </ul>
+                </div>
+                <div class="bg1 right1">
+                    <p>联系人资料（必填）</p>
+                    <div class="carType"><span>车型：</span>金杯车</div>
+                    <div class="carPrice"><span>起步价：</span>220元（含10公里）</div>
+                    <div><span>时间：</span>2018-7-20   上午9:00-10:00 </div>
+                    <div><span>起点：</span>海淀区清河&nbsp;&nbsp;;无电梯10层</div>
+                    <div><span>终点：</span>海淀区望京&nbsp;&nbsp;;无电梯20层</div>
+                    <div><span>超历程费：</span>5元-公里=*元</div>
+                </div>
+                <div class="bg1 noneborder">
+                    <p class="font14">预估价格：<span class="money_flag">¥</span><span class="red">689.00</span></p>
+                    <div><span>平面搬运距离费、高速费、停车费、延误工时费 远郊费，订单结束时与司机商议</span></div>
+                    <div class="line"></div>
+                    <div>支付定金，获得<span class="reds">30</span>元立减优惠券</div>
+                </div>
+                <div class="button20">支付定金 10元</div>
+            </div>
+        </div>
+        <!--居民搬家-->
+        <div class="right placeAnOrder">
+            <div class="right_content bg nonebg">
+                <div class="bg11">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/order/car_03.png" alt="">
+                                <div class="msg">
+                                    <p>金杯车</p>
+                                    <p>¥200</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/order/car_b_03.png" alt="">
+                                <div class="msg">
+                                    <p>金杯车1</p>
+                                    <p>¥200</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/order/car_b_03.png" alt="">
+                                <div class="msg">
+                                    <p>金杯车2</p>
+                                    <p>¥200</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/order/car_b_03.png" alt="">
+                                <div class="msg">
+                                    <p>金杯车4</p>
+                                    <p>¥200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next button-next"></div>
+                        <div class="swiper-button-prev button-prev"></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="bg1 right1 bgleft">
+                        <p>请输入搬家起点、终点 <span class="font12">有中途装卸</span></p>
+                        <ul style="overflow: visible;">
+                            <li><img src="../img/order/Location1.png" alt=""><input type="text" placeholder="起点"></li>
+                            <li><span style="margin-right: 10px;">楼层</span><input type="text" placeholder="（有电梯无需填写）"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="../img/order/Location1.png" alt=""><input type="text" placeholder="起点"></li>
+                            <li><span style="margin-right: 10px;">楼层</span><input type="text" placeholder="（有电梯无需填写）"></li>
+                        </ul>
+                    </div>
+                    <div class="bg1 right1 bgleft1">
+                        <ul>
+                            <li><input type="text" placeholder="搬家时间：" id="test2"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg11 jmbj">
+                    <!--tab切换头部-->
+                    <div class="sec-head flex">
+                        <ul class="nav flex">
+                            <li class="choose_click">贵、重、易损物品</li>
+                            <li>家具拆装</li>
+                            <li>包装材料</li>
+                            <li>家用电器</li>
+                            <li>空调拆装</li>
+                        </ul>
+                    </div>
+
+                    <!--tab内容-->
+                    <div class="thing-wrapper" style="display: block">
+                        <ul class="thing-con flex">
+                            <li class="type">冰箱</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">电视</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗衣机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗碗机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                    </div sty>
+                    <div class="thing-wrapper">
+                        <ul class="thing-con flex">
+                            <li class="type">冰箱2</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">电视</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗衣机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗碗机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                    </div>
+                    <div class="thing-wrapper">
+                        <ul class="thing-con flex">
+                            <li class="type">冰箱3</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">电视</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗衣机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗碗机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                    </div>
+                    <div class="thing-wrapper">
+                        <ul class="thing-con flex">
+                            <li class="type">冰箱4</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">电视</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗衣机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗碗机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                    </div>
+                    <div class="thing-wrapper">
+                        <ul class="thing-con flex">
+                            <li class="type">冰箱5</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">电视</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗衣机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                        <ul class="thing-con flex">
+                            <li class="type">洗碗机</li>
+                            <li><label><input type="checkbox"><span></span></label>200立升以下<span>0元<span></li>
+                            <li><label><input type="checkbox"><span></span></label>200-249L<span>50元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>250-299L<span>100元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>300L-399L<span>200元</span></li>
+                            <li><label><input type="checkbox"><span></span></label>400L以上<span>300元</span></li>
+                        </ul>
+                    </div>
+                    <!--备注-->
+                    <div class="remark">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="备注信息：其他特殊物品"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="right_content bg">
+                <div class="bg1 right1">
+                    <p>联系人资料（必填）</p>
+                    <ul>
+                        <li><img src="../img/order/Avatar1.png" alt=""><input type="text" placeholder="您的姓名"></li>
+                        <li><img src="../img/order/phone.png" alt=""><input type="text" placeholder="您的电话"></li>
+                    </ul>
+                </div>
+                <div class="bg1 right1">
+                    <p>联系人资料（必填）</p>
+                    <div class="carType"><span>车型：</span>金杯车</div>
+                    <div class="carPrice"><span>起步价：</span>220元（含10公里）</div>
+                    <div><span>时间：</span>2018-7-20   上午9:00-10:00 </div>
+                    <div><span>起点：</span>海淀区清河&nbsp;&nbsp;;无电梯10层</div>
+                    <div><span>终点：</span>海淀区望京&nbsp;&nbsp;;无电梯20层</div>
+                    <div><span>超历程费：</span>5元-公里=*元</div>
+                </div>
+                <div class="bg1 noneborder">
+                    <p class="font14">预估价格：<span class="money_flag">¥</span><span class="red">689.00</span></p>
+                    <div><span>平面搬运距离费、高速费、停车费、延误工时费 远郊费，订单结束时与司机商议</span></div>
+                    <div class="line"></div>
+                    <div>支付定金，获得<span class="reds">30</span>元立减优惠券</div>
+                </div>
+                <div class="button20">支付定金 10元</div>
+            </div>
+        </div>
+        <!--企业搬家-->
+        <div class="right" style="width: calc(100%);">
+            <div class="right_content">
+                <ul>
+                    <li>您的姓名3：<input type="text"></li>
+                    <li>您的电话：<input type="text"></li>
+                    <li>您的地址：<input type="text"></li>
+                    <li>您的留言：<input type="text"></li>
+                </ul>
+                <button>提交表单</button>
+            </div>
+        </div>
+        <!--跨域搬家-->
+        <div class="right">
+            <div class="right_content">
+                <ul>
+                    <li>您的姓名2：<input type="text"></li>
+                    <li>您的电话：<input type="text"></li>
+                    <li>您的地址：<input type="text"></li>
+                    <li>您的留言：<input type="text"></li>
+                </ul>
+                <button>提交表单</button>
+            </div>
+        </div>
+        <!--我的订单-->
+        <div class="right" style="width: calc(100%);">
+            <div class="order">
+                <div class="sec-head flex">
+                    <div class="head-left flex">
+                        <ul class="nav flex">
+                            <li class="choose_click">全部</li>
+                            <li>进行中</li>
+                            <li>已完成</li>
+                            <li>已取消</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order_content">
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order_content">
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order_content">
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order_content">
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flex order_title">
+                                <p>
+                                    <span>2018-08-21 11:00</span>
+                                    <span>订单编号：3423423423</span>
+                                </p>
+                                <p>
+                                    <span class="cancel">取消订单</span>
+                                    <span class="ing">进行中</span>
+                                </p>
+                            </div>
+                            <div class="flex content4">
+                                <div class="order_p">
+                                    <div class="order_left">
+                                        <img src="../img/order/Location1.png" alt="">
+                                        <img src="../img/order/line.png" alt="">
+                                        <img src="../img/order/Location2.png" alt="">
+                                    </div>
+                                    <div class="order_right">
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                        <p>海淀区清河美馨家园信息科技大学西</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>司机电话</p>
+                                        <p>13344455566</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>客服电话（5号）</p>
+                                        <p>400-000-8888</p>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="Driver">
+                                    <div class="order_right">
+                                        <p>订单金额</p>
+                                        <p class="color">¥876</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--我的优惠券-->
+        <div class="right Coupon">
+            <div class="Coupons">
+                <div class="bg already_received">
+                    <div class="money">
+                        <span>¥</span>
+                        <span>5</span>
+                    </div>
+                    <div class="three">
+                        <p>下单立减优惠</p>
+                        <p>2018.10.31-2018.12.01</p>
+                        <button>使用</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Coupons">
+                <div class="bg Unreceived">
+                    <div class="money">
+                        <span>¥</span>
+                        <span>5</span>
+                    </div>
+                    <div class="three">
+                        <p>满700元可使用</p>
+                        <p>2018.10.31-2018.12.01</p>
+                        <button>使用</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Coupons">
+                <div class="bg already_received">
+                    <div class="money">
+                        <span>¥</span>
+                        <span>5</span>
+                    </div>
+                    <div class="three">
+                        <p>下单立减优惠</p>
+                        <p>2018.10.31-2018.12.01</p>
+                        <button>使用</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Coupons">
+                <div class="bg Unreceived">
+                    <div class="money">
+                        <span>¥</span>
+                        <span>5</span>
+                    </div>
+                    <div class="three">
+                        <p>满200元可使用</p>
+                        <p>2018.10.31-2018.12.01</p>
+                        <button>使用</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Coupons">
+                <div class="bg Unreceived">
+                    <div class="money">
+                        <span>¥</span>
+                        <span>5</span>
+                    </div>
+                    <div class="three">
+                        <p>下单立减优惠</p>
+                        <p>2018.10.31-2018.12.01</p>
+                        <button>使用</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/laydate/laydate.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on:{
+            click:function() {
+                // alert(this.clickedIndex)
+                var _index = this.clickedIndex;
+                // $('.swiper-slide img').attr('src','../img/order/car_b_03.png');
+                $('.swiper-slide img').css({'opacity':'.3'});
+                // $('.swiper-slide').eq(_index).find('img').attr('src','../img/order/car_03.png');
+                $('.swiper-slide').eq(_index).find('img').css({'opacity':'1'});
+
+                var carName = $('.swiper-slide').eq(this.clickedIndex).find('.msg p:eq(0)').html();
+                var price = $('.swiper-slide').eq(this.clickedIndex).find('.msg p:eq(1)').html();
+                // alert(carName)
+                switch(this.clickedIndex){
+                    case 0:
+                        $('.bg1.right1 .carType').html('<span>车型：</span>' + carName);
+                        $('.bg1.right1 .carPrice').html('<span>起步价：</span>' + price);
+                    break;
+                    case 1:
+                        $('.bg1.right1 .carType').html('<span>车型：</span>' + carName);
+                        $('.bg1.right1 .carPrice').html('<span>起步价：</span>' + price);
+                    break;
+                    case 2:
+                        $('.bg1.right1 .carType').html('<span>车型：</span>' + carName);
+                        $('.bg1.right1 .carPrice').html('<span>起步价：</span>' + price);
+                    break;
+                    case 3:
+                        $('.bg1.right1 .carType').html('<span>车型：</span>' + carName);
+                        $('.bg1.right1 .carPrice').html('<span>起步价：</span>' + price);
+                    break;
+                    case 4:
+                        $('.bg1.right1 .carType').html('<span>车型：</span>' + carName);
+                        $('.bg1.right1 .carPrice').html('<span>起步价：</span>' + price);
+                    break;
+                }
+            }
+        }
+    });
+
+    laydate.render({
+        elem: '#test1'
+        ,type: 'datetime'
+    });
+    laydate.render({
+        elem: '#test2'
+        ,type: 'datetime'
+    });
+</script>
+<script src="../js/common.js"></script>
+<script src="../js/order.js"></script>
+
+</body>
+</html>

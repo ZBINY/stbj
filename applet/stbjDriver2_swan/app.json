@@ -1,0 +1,17 @@
+{
+    "pages": [
+        "pages/homePage/homePage",
+        "pages/orderDetail/orderDetail",
+        "pages/orderList/orderList",
+        "pages/personal/personal",
+        "pages/stationMsg/stationMsg",
+        "pages/login/login",
+        "pages/homePage/homePage"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "四通搬家（司机端）",
+        "navigationBarTextStyle": "white"
+    }
+}

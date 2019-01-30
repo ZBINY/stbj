@@ -1,0 +1,153 @@
+<view class="page">
+    <view class='address'>
+        <image src='../../img/3_03.png'></image>
+        <view class='panel'>
+            <view class='address_1 address_flex'>
+                <text>2018-08-21 11:00</text>
+                <text class='orderNum'>订单号：201808211234</text>
+            </view>
+            <view class='address_2 address_flex'>
+                <text class='text'>海淀区清河美馨家园信息科技大学西</text>
+                <view class="navgation">导航</view>
+            </view>
+            <view class='address_2 address_flex'>
+                <text class='text'>朝阳区亚运新新家园花园北湖瞿溪路西</text>
+                <view class="navgation">导航</view>
+            </view>
+        </view>
+    </view>
+    <view class="customerMsg-wrapper">
+        <text class="Msg-title">客户信息</text>
+        <view class="customerMsg address_flex">
+            <text>{{customer.name}}<text class="phoneNum">({{customerPhoneNum}})</text></text>
+            <image src="../../img/tel.png" id="0" bindtap="tel"></image>
+        </view>
+    </view>
+    <view class="customerMsg-wrapper">
+        <text class="Msg-title">客服信息</text>
+        <view class="customerMsg address_flex">
+            <text>{{service.name}}<text class="phoneNum">({{servicePhoneNum}})</text></text>
+            <image src="../../img/tel.png" id="1" bindtap="tel"></image>
+        </view>
+    </view>
+    <!--基础费用-->
+    <view class="cost-wrapper">
+        <text class="title">基础费用</text>
+        <view class="cost-list" s-for="item, index in costList.data" s-key="*this">
+            <text class="cost-list-lft">{{item.name}}</text>
+            <view class="cost-list-rgt">
+                <view><text class="cost-remark" s-if="item.remark1">{{item.remark1}}= </text>{{item.price1}}</view>
+                <view s-if="item.remark2"><text class="cost-remark" s-if="item.remark2">{{item.remark2}}= </text>{{item.price2}}</view>
+            </view>
+
+        </view>
+        <!--基础、包装弹窗-->
+        <view class="cost-addWrapper" s-if='addFlag'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{costListPicker}}" range-key="{{'name'}}" class="cost-addWrapper-lft">
+                <view class="picker">
+                    {{indexFlag === false ? '请选择收费项目:' : costListPicker[index].name}}
+                    <!--请选择收费项目：{{array[index]}}-->
+                </view>
+            </picker>
+            <input bindblur="confirmPrice" class="cost-addWrapper-rgt" type="digit" value="¥" />
+        </view>
+        <!--添加按钮-->
+        <view class="cost-add" bindtap="add">+</view>
+    </view>
+    <!--大件搬运-->
+    <view class="cost-wrapper">
+        <text class="title">大件搬运</text>
+        <view class="cost-list" s-for="item, index in largeHandling.data" s-key="*this">
+            <text class="cost-list-lft">{{item.name}}</text>
+            <view class="cost-list-rgt">
+                <view><text class="cost-remark" s-if="item.remark1">{{item.remark1}}= </text>{{item.price1}}</view>
+            </view>
+        </view>
+        <!--增加收费项-->
+        <view class="large-addWeapper">
+            <view class="large-add-title">
+                <text>增加收费项</text>
+                <view class="large-add" bindtap="add1">+</view>
+            </view>
+            <!--选择弹窗-->
+            <view class="cost-addWrapper" s-if='addFlag1'>
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{MultiArray}}" range-key="{{'name'}}" class="cost-addWrapper-lft">
+                    <view class="picker">
+                        {{indexFlag3 === false ? '项目选择增加' :  MultiArray[1][multiIndex[1]].name }}
+                    </view>
+                </picker>
+                <input bindblur="confirmPrice1" class="cost-addWrapper-rgt" type="digit" value="¥" />
+            </view>
+        </view>
+        <!--手动输入项目-->
+        <!-- <view class="large-addWeapper">
+            <view class="large-add-title">
+                <text>手动输入项目</text>
+                <view class="large-add">+</view>
+            </view>
+            <view class="cost-addWrapper">
+                <input class="hand-write" placeholder="请在此处输入"></input>
+                <input class="cost-addWrapper-rgt" value="¥"></input>
+            </view>
+        </view> -->
+    </view>
+    <!--包装物品-->
+    <view class="cost-wrapper">
+        <text class="title">包装物品</text>
+        <view class="cost-list" s-for="item, index in packingArticles.data" s-key="*this">
+            <text class="cost-list-lft">{{item.name}}</text>
+            <view class="cost-list-rgt">
+                <view><text class="cost-remark" s-if="item.remark1">{{item.remark1}}= </text>{{item.price1}}</view>
+            </view>
+        </view>
+        <!--基础、包装弹窗-->
+        <view class="cost-addWrapper" s-if='addFlag2'>
+            <picker bindchange="bindPackingChange" value="{{index}}" range="{{packingArticlesPicker}}" range-key="{{'name'}}" class="cost-addWrapper-lft">
+                <view class="picker">
+                    {{indexFlag1  === false ? '请选择收费项目:' : packingArticlesPicker[index].name}}
+                    <!--请选择收费项目：{{array[index]}}-->
+                </view>
+            </picker>
+            <input bindblur="confirmPrice2" class="cost-addWrapper-rgt" type="digit" value="¥" />
+        </view>
+        <!--添加按钮-->
+        <view class="cost-add" bindtap='add2'>+</view>
+    </view>
+
+    <!--订单总额-->
+    <view class="order-total">
+        <view class="order-total-list" s-for="item, index in orderTotal.data" s-key="*this">
+            <text>{{item.name}}</text>
+            <text>{{item.price}}</text>
+        </view>
+    </view>
+
+    <!--订单状态栏-->
+    <view bindtap="receivable" class="order-status">已到达目的地>></view>
+
+    <!-- 遮罩层 -->
+    <view class="mask {{showView ?'show':'hide'}}" catchtouchmove="preventD">
+      <!-- 发起收款 -->
+      <view class="receivable  {{showView1 ? 'show' :'hide'}}">
+        <image bindtap="close" src="../../img/close.png" class="close"></image>
+        <text class="title">请选择收款方式</text>
+        <view class="receivable-mode">
+          <view bindtap="ToQrcode" class="faceToFace">
+            <image src="../../img/faceToFace.png"></image>
+            <text>面对面</text>
+          </view>
+          <view class="underLine">
+            <image src="../../img/underline.png"></image>
+            <text>线下付款</text>
+          </view>
+        </view>
+      </view>
+      <!-- 二维码支付 -->
+      <view class="receivable qrCode  {{showView2 ? 'show' :'hide'}}">
+        <image bindtap="close" src="../../img/close.png" class="close"></image>
+        <text class="title">扫描二维码付款</text>
+        <text class='qrCode-price'>¥{{599}}</text>
+        <image src="../../img/qrcode.png" class="qrcodePic"></image>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,176 @@
+<view class="main">
+    <view class="class-left">
+      <view class="navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+              {{item.name}}
+            </view>
+        </block>
+      </view>
+
+    </view>
+
+    <scroll-view class="class-right">
+        <block wx:for="{{details}}" wx:for-item="dt" wx:for-index wx:key="idx">
+        <swiper current="{{activeIndex}}" bindchange="bindChange">
+          <swiper-item>
+            <view class='content'>
+              <text>冰箱(199升以下)</text>
+              <view>
+                <text class='mg'>¥0</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200～249)</text>
+              <view>
+                <text class='mg'>¥50/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+             <view class='content'>
+              <text>冰箱(250～299)</text>
+              <view>
+                <text class='mg'>¥60/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200升以上)</text>
+              <view>
+                <text class='mg'>¥70/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            
+          </swiper-item>
+          <swiper-item>
+            <view class='content'>
+              <text>冰箱(199升以下)</text>
+              <view>
+                <text class='mg'>¥0</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200～249)</text>
+              <view>
+                <text class='mg'>¥50/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+             <view class='content'>
+              <text>冰箱(250～299)</text>
+              <view>
+                <text class='mg'>¥60/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200升以上)</text>
+              <view>
+                <text class='mg'>¥70/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            
+          </swiper-item>
+          <swiper-item>
+            <view class='content'>
+              <text>冰箱(199升以下)</text>
+              <view>
+                <text class='mg'>¥0</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200～249)</text>
+              <view>
+                <text class='mg'>¥50/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+             <view class='content'>
+              <text>冰箱(250～299)</text>
+              <view>
+                <text class='mg'>¥60/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200升以上)</text>
+              <view>
+                <text class='mg'>¥70/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            
+          </swiper-item>
+          <swiper-item>
+            <view class='content'>
+              <text>冰箱(199升以下)</text>
+              <view>
+                <text class='mg'>¥0</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200～249)</text>
+              <view>
+                <text class='mg'>¥50/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+             <view class='content'>
+              <text>冰箱(250～299)</text>
+              <view>
+                <text class='mg'>¥60/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200升以上)</text>
+              <view>
+                <text class='mg'>¥70/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            
+          </swiper-item>
+          <swiper-item>
+            <view class='content'>
+              <text>冰箱(199升以下)</text>
+              <view>
+                <text class='mg'>¥0</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200～249)</text>
+              <view>
+                <text class='mg'>¥50/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+             <view class='content'>
+              <text>冰箱(250～299)</text>
+              <view>
+                <text class='mg'>¥60/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            <view class='content'>
+              <text>冰箱(200升以上)</text>
+              <view>
+                <text class='mg'>¥70/件</text>
+                <checkbox/> 
+              </view>
+            </view>
+            
+          </swiper-item>
+        </swiper>
+            
+        </block>
+    </scroll-view>
+</view>
+<view class='qr' bindtap='bindViewTap'>确认</view>
